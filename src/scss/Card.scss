@@ -1,0 +1,14 @@
+// Kumbh Sans
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.card{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    .card_container{
+        display: flex;
+        gap: 10px;
+    }
+}
