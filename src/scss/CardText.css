@@ -1,6 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .card_text {
-  background-color: blue;
+  padding: 50px 30px;
+  width: 50%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.card_text .text_header {
+  margin-bottom: 30px;
+}
+.card_text .text_header p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: hsl(26, 100%, 55%);
+  margin-bottom: 10px;
+}
+.card_text .text_header h1 {
+  font-size: 40px;
+  line-height: 45px;
+  color: hsl(0, 0%, 0%);
+}
+.card_text .text_content p {
+  width: 90%;
+  font-weight: 500;
+  font-size: 14px;
+  color: hsl(220, 14%, 75%);
+  line-height: 25px;
+}
+.card_text .price_tag {
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: -5px;
+}
+.card_text .price_tag h3 {
+  font-weight: 700;
+}
+.card_text .price_tag p {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 5px;
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+}
+.card_text span {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: hsl(220, 14%, 75%);
+}
+.card_text .cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.card_text .cart .cart_counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(223, 64%, 98%);
+  padding: 10px;
+  border-radius: 5px;
+  width: 30%;
+}
+.card_text .cart .cart_counter .counter_icon {
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.card_text .cart .cart_counter p {
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+}
+.card_text .cart button {
+  border: none;
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(223, 64%, 98%);
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
   width: 50%;
 }
