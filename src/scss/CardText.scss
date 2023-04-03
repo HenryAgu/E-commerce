@@ -18,7 +18,6 @@
 
         h1{
             font-size: 40px;
-            line-height: 45px;
             color: hsl(0, 0%, 0%);
         }
     }
@@ -92,6 +91,45 @@
             cursor: pointer;
             transition:  all 0.5s ease-in;
             width: 50%;
+        }
+    }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+    .card_text{
+        width: 100%;
+        padding: 0;
+
+        .text_header{
+            padding: 10px;
+            margin-bottom: 10px;
+            h1{
+                font-size: 35px;
+            }
+        }
+
+        .text_content{
+            padding: 10px;
+        }
+        .price_tag{
+            margin-top: 10px;
+            padding: 10px;
+        }
+        span{
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .cart{
+            flex-direction: column;
+
+            .cart_counter{
+                width: 90%;
+            }
+            button{
+                width: 95%;
+            }
         }
     }
 }

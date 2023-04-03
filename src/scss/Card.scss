@@ -10,3 +10,20 @@
         gap: 10px;
     }
 }
+
+/* Responsiveness starts here */
+/* medium screens */
+@media (max-width: 991px) {
+    .card{
+        width: 95%;
+    }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+    .card{
+       .card_container{
+        flex-direction: column;
+       }
+    }
+}

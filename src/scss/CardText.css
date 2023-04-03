@@ -17,7 +17,6 @@
 }
 .card_text .text_header h1 {
   font-size: 40px;
-  line-height: 45px;
   color: hsl(0, 0%, 0%);
 }
 .card_text .text_content p {
@@ -84,4 +83,39 @@
   cursor: pointer;
   transition: all 0.5s ease-in;
   width: 50%;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .card_text {
+    width: 100%;
+    padding: 0;
+  }
+  .card_text .text_header {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .card_text .text_header h1 {
+    font-size: 35px;
+  }
+  .card_text .text_content {
+    padding: 10px;
+  }
+  .card_text .price_tag {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .card_text span {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .card_text .cart {
+    flex-direction: column;
+  }
+  .card_text .cart .cart_counter {
+    width: 90%;
+  }
+  .card_text .cart button {
+    width: 95%;
+  }
 }
