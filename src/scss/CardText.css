@@ -48,6 +48,7 @@
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 500;
   font-size: 12px;
+  text-decoration: line-through;
   color: hsl(220, 14%, 75%);
 }
 .card_text .cart {
