@@ -9,17 +9,23 @@ import { GrFormSubtract } from "react-icons/gr";
 import { BsCart2 } from "react-icons/bs";
 
 const CardText = () => {
-  const [counter,setCounter] = useState(0)
+  const [bonusAmount,setBonusAmount] = useState(125);
+  const [amount,setAmount] = useState(250)
+  const [counter,setCounter] = useState(1);
 
   // for increase
   const handleIncrease = () =>{
-    setCounter(counter + 1)
+    setCounter(counter + 1);
+    setAmount(amount + 250);
+    setBonusAmount(bonusAmount + 125);
   }
 
   // For Decrease
   const handleDecrease = () =>{
-    if(counter > 0){
-      setCounter(counter - 1)
+    if(counter > 1){
+      setCounter(counter - 1);
+      setAmount(amount - 250);
+      setBonusAmount(bonusAmount - 125);
     }
   }
   return (
@@ -36,10 +42,10 @@ const CardText = () => {
         </p>
       </div>
       <div className="price_tag">
-        <h3>$125.00</h3>
+        <h3>${bonusAmount}.00</h3>
         <p className="discount">50%</p>
       </div>
-      <span>$250.00</span>
+      <span>${amount}.00</span>
       <div className="cart">
         <div className="cart_counter">
           <IoIosAdd className="counter_icon" onClick={handleIncrease}/>
