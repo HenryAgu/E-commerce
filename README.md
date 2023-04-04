@@ -21,6 +21,8 @@ Users should be able to:
 
 
 ### Screenshot
+![cart](https://user-images.githubusercontent.com/74037448/229741998-42593637-1361-4709-9893-edc66cdf2a7b.PNG)
+![cart2](https://user-images.githubusercontent.com/74037448/229742011-eae7bc01-9d3b-4d49-b67e-d5a18f7d04a9.PNG)
 
 
 
