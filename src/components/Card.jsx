@@ -11,7 +11,7 @@ const Card = () => {
     <div className="card">
       <div className="card_container">
         <CardImage />
-        <CardText />
+          <CardText />
       </div>
     </div>
   );

@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 
 // stylesheet
 import "../scss/CardImage.css";
 
+// context
+import { AllContext } from "./AllContext";
+
 // assets
-import image1 from "../assets/image-product-1.jpg";
+
 import image2 from "../assets/image-product-2.jpg";
 import image3 from "../assets/image-product-3.jpg";
 import image4 from "../assets/image-product-4.jpg";
@@ -15,7 +18,7 @@ import thumb3 from "../assets/image-product-3-thumbnail.jpg";
 import thumb4 from "../assets/image-product-4-thumbnail.jpg";
 
 const CardImage = () => {
-  const [mainImage, setmainImage] = useState(image1);
+  const {mainImage,setmainImage} = useContext(AllContext);
 
   const firstThumHandler = () => {
     setmainImage(image1);

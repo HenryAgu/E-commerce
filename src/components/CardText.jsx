@@ -1,7 +1,10 @@
-import React,{useState} from "react";
+import React,{useContext} from "react";
 
 // stylesheet
 import "../scss/CardText.css";
+
+// context
+import { AllContext } from "./AllContext";
 
 // react icons
 import {IoIosAdd } from "react-icons/io";
@@ -9,9 +12,10 @@ import { GrFormSubtract } from "react-icons/gr";
 import { BsCart2 } from "react-icons/bs";
 
 const CardText = () => {
-  const [bonusAmount,setBonusAmount] = useState(125);
-  const [amount,setAmount] = useState(250)
-  const [counter,setCounter] = useState(1);
+  const {counter,setCounter} = useContext(AllContext);
+  const {bonusAmount,setBonusAmount} = useContext(AllContext);
+  const {amount,setAmount} = useContext(AllContext);
+
 
   // for increase
   const handleIncrease = () =>{
